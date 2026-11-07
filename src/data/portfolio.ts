@@ -1,5 +1,7 @@
 export type Palette = { from: string; via: string; to: string; accent: string };
 
+const assetUrl = (filename: string) => `${import.meta.env.BASE_URL}assets/${filename}`;
+
 export const profile = {
   fullName: 'Vijayanand G',
   displayName: 'Vijayanand',
@@ -19,9 +21,9 @@ export const profile = {
     github: 'https://github.com/vijayanand321',
     portfolio: 'https://vijayanand321portfolio.firebaseapp.com/',
   },
-  resumePdf: '/assets/Vijayanand_Resume.pdf',
+  resumePdf: assetUrl('Vijayanand_Resume.pdf'),
   portrait: {
-    src: '/assets/vijayanand-photo-4.jpg',
+    src: assetUrl('vijayanand-photo-4.jpg'),
     alt: 'Vijayanand in a dark suit and tie',
   },
   interests: ['Oracle Retail Xstore', 'Retail integrations', 'POS performance'],
@@ -29,17 +31,17 @@ export const profile = {
 
 export const photoGallery = [
   {
-    src: '/assets/vijayanand-photo-1.jpg',
+    src: assetUrl('vijayanand-photo-1.jpg'),
     alt: 'Black-and-white portrait of Vijayanand wearing sunglasses',
     label: 'In monochrome',
   },
   {
-    src: '/assets/vijayanand-photo-2.jpg',
+    src: assetUrl('vijayanand-photo-2.jpg'),
     alt: 'Cinematic side-profile portrait of Vijayanand',
     label: 'Studio portrait',
   },
   {
-    src: '/assets/vijayanand-photo-3.jpg',
+    src: assetUrl('vijayanand-photo-3.jpg'),
     alt: 'Illustrated portrait of Vijayanand against a red backdrop',
     label: 'Illustrated',
   },
@@ -239,34 +241,34 @@ export const certifications: Certification[] = [
   {
     issuer: 'Oracle',
     name: 'Xstore Point of Service Next-Gen Technical Implementation Specialist Assessment (2023)',
-    link: '/assets/Oracle_Retail_Xstore_Technical_Implementation.pdf',
+    link: assetUrl('Oracle_Retail_Xstore_Technical_Implementation.pdf'),
   },
   {
     issuer: 'Oracle',
     name: 'Xstore Point of Sale Functional Implementation Specialist Assessment (2023)',
-    link: '/assets/Oracle_Retail_Xstore_Functional_Implementation.pdf',
+    link: assetUrl('Oracle_Retail_Xstore_Functional_Implementation.pdf'),
   },
   { issuer: 'JSpiders Bengaluru', name: 'Java Full Stack Development (2022)' },
   {
     issuer: 'JSpiders Bengaluru',
     name: 'Core Java, SQL, Web Technology & Advanced Java (2023)',
-    link: '/assets/JSpiders_Core_Java_SQL_Web_Technology.png',
+    link: assetUrl('JSpiders_Core_Java_SQL_Web_Technology.png'),
   },
   { issuer: 'Udemy', name: 'Spring Boot and REST API (2022)' },
   {
     issuer: 'Forage · JPMorgan Chase',
     name: 'Software Engineering Virtual Experience (May 2023)',
-    link: '/assets/JPMorgan_Software_Engineering_Virtual_Experience.pdf',
+    link: assetUrl('JPMorgan_Software_Engineering_Virtual_Experience.pdf'),
   },
   {
     issuer: 'LinkedIn Learning',
     name: 'Agile Software Development (August 2025)',
-    link: '/assets/LinkedIn_Agile_Software_Development.jpg',
+    link: assetUrl('LinkedIn_Agile_Software_Development.jpg'),
   },
   {
     issuer: 'HackerRank',
     name: 'Java (Basic) Skill Certification (May 2024)',
-    link: '/assets/HackerRank_Java_Basic.png',
+    link: assetUrl('HackerRank_Java_Basic.png'),
   },
 ];
 
