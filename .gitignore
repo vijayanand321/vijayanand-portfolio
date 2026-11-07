@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.local
+/.claude
+/pic.png
+/pic1.jpeg
+/sushmita-the-series.zip
